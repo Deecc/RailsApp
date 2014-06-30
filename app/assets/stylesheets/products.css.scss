@@ -1,7 +1,17 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	color: #EBC6A1;
+}
+
+p {
+	color: #EBC6A1;
+}
+
 .products{
+
 	
 	table {
 		border-collapse: collapse;
@@ -25,7 +35,7 @@
 	}
 
 	dt {
-		color: #244;
+		color: #935A3E;
 		font-weight: bold;
 		font-size: larger;
 	}
@@ -43,11 +53,16 @@
 }
 
 .list_line_even {
-	background: #e8f8f8;
+	background: #D3BFB6;
 }
 
 .list_line_odd {
-	background: #f8b0f8;
+	background: #756A65;
 }
+
+.list_qtd_vazio {
+	background: #D63333;
+}
+
 
 }

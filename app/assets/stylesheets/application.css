@@ -10,4 +10,56 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap
  */
+
+
+
+#banner {
+	background: #2E251C;
+	padding: 10px;
+	border-bottom: 2px solid;
+	font: small-caps 40px/40px "Times New Roman", serif;
+	color: #E6B88A;
+	text-align: center;
+	img {
+		float: left;
+	}
+}
+
+#notice {
+	color: #2E251C !important;
+	border: 2px solid red;
+	padding: 1em;
+	margin-bottom: 2em;
+	background-color: #8A6E53;
+	font: bold smaller sans-serif;
+}
+
+#columns {
+
+	background: #2E251C;
+	}#main {
+		font-size: 14px;
+		margin-left: 17em;
+		padding: 1em;
+		background: #453729;
+	}
+
+	#side {
+		float: left;
+		padding: 1em 2em;
+		width: 13em;
+		background: #A18161;
+		ul {
+			padding: 0;
+			li {
+				list-style: none;
+				a {
+					color: #EBC6A1;
+					font-size: small;
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,7 @@
-<h1>Listing products</h1>
-
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1>Bem vindo à YourBook.com</h1>
 <table>
   <% @products.each do |product| %>
   <% if (product.qtd > 0) %>
