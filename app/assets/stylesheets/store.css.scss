@@ -1,6 +1,7 @@
 // Place all the styles related to the Store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .store {
 
 	h1 {
@@ -88,9 +89,10 @@ p {
  }
 
 .list_actions {
-	font-size: x-small;
+	font-size: 14px;
 	text-align: right;
 	padding-left: 1em;
+	display: inline;
 }
 
 .list_line_even {

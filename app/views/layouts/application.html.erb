@@ -11,17 +11,16 @@
 </head>
 <body class="<%= controller.controller_name %>">
 	<div id="banner">
-		<%= image_tag("logo.ppg") %>
-		<%= @page_title || "YourBook.com" %>
+		<%= image_tag("Banner.png") %>
 	</div>
 	<div id="columns">
 		<div id="side">
 			<ul>
-				<li><a href="index">Inicio</a></li>
-				<li><a href="http://www..../faq">Quem Somos</a></li>
-				<li><a href="http://www..../news">A livraria</a></li>
-				<li><a href="http://www..../contact">Contato</a></li>
-				<li><a href="/products">Produtos</a></li>
+				<li><a href="#"><%= image_tag("Home.png") %></a></li>
+				<li><a href="#"><%= image_tag("Produtos.png") %></a></li>
+				<li><a href="http://www..../news"><%= image_tag("Secoes.png") %></a></li>
+				<li><a href="http://www..../contact"><%= image_tag("Contato.png") %></a></li>
+				
 			</ul>
 		</div>
 		<div id="main">
