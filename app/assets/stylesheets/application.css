@@ -13,57 +13,78 @@
  *= require bootstrap
  */
 
-body {
-	width: 1024px;
-	height: 540px;
-	margin-left: 150px;
+*= require bootstrap
+
+body{
+	background-color: yellow;
 }
 
 #banner {
 	background: white;
-	padding: 0px;
-	border-bottom: 2px solid;
-	img {
-		float: left;
-	}
+	margin-bottom: 2px;
+}
+
+#banner img {
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+		border-bottom-right-radius: 120px;
+		border-bottom-left-radius: 120px;
+
+		
 }
 
 #notice {
 	color: #2E251C !important;
-	border: 2px solid red;
-	padding: 1em;
-	margin-bottom: 2em;
-	background-color: #8A6E53;
-	font: bold smaller sans-serif;
+	
 }
 
-#columns {
-
-	background: #2E251C;
-	}
-	#main {
-		font-size: 14px;
-		margin-left: 10px;
-		padding: 10px;
-		background: #453729;
-	}
-
-	#side {
-		float: right;
-		padding: 1em 2em;
-		width: 13em;
-		background: white;
-		ul {
-			padding: 0;
-			list-style-type: none;
-			li {
-				
-				list-style: none;
-				
-				a {
-					display: inline-block;
-				}
-			}
-		}
-	}
+#menu {
+	height: 50px;
+	margin-bottom: 5px;
+	margin-top: 1px;
+	
 }
+
+#menu ul {
+
+	list-style-type: none;
+	margin-left:100px;
+	padding: 0px;
+}
+
+#menu ul li {
+	display: inline;
+	padding: 0px;
+	margin:0px;
+}
+
+#menu ul li a{
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+#menu ul li a img{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 35px;
+		border-bottom-left-radius: 35px;
+}
+
+#menu ul li a img:hover{
+	border-radius: 9px;
+	border-style:2px solid  #875559;
+
+}
+
+
+#main {
+	border-radius: 25px;
+	font-size: 14px;
+	background: #8c867e;
+	color: #875559;
+	margin:20px;
+}
+

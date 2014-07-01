@@ -3,17 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
-	color: #EBC6A1;
+	color: #875558;
 }
 
 p {
-	color: #EBC6A1;
+	color: #875558;
 }
 
 .products{
 
 	
 	table {
+		background-color: #8c867e;
+		width:1024px;
 		border-collapse: collapse;
 	}
 
@@ -23,31 +25,32 @@ p {
 	}
 
 	.list_image{
-		width: 60px;
-		height: 70px;
+		width: 70px;
+		height: 100px;
 	}
 
 	.list_description{
-		width: 60%;
+		width: 100%;
 
 	dl {
-		margin: 0;
+		margin: 10px;
 	}
 
 	dt {
-		color: #935A3E;
+		color: #8c867e;
 		font-weight: bold;
 		font-size: larger;
 	}
 
 	dd {
-		margin:0;
+		margin:10px;
 	}
 
  }
 
 .list_actions {
-	font-size: x-small;
+	background-color: #d8d8d8;
+	font-size: 20px;;
 	text-align: right;
 	padding-left: 1em;
 }

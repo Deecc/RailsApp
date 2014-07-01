@@ -2,15 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+		width: 1024px;
+		height: 540px;
+		margin: auto;
+}
+
+
+
 .store {
+
+	
 
 	h1 {
 
 		margin: 0;
 		padding-bottom: 0.5em;
 		font: 150% sans-serif;
-		color: #EECDAD;
-		border-bottom: 3px dotted #F0D4B9;
+		color: #875559;
+		border-bottom: 3px dotted #875558;
 	}
 
 
@@ -18,7 +28,7 @@
 
 	overflow: auto;
 	margin-top: 1em;
-	border-bottom: 1px dotted #F0D4B9;
+	border-bottom: 1px dotted #875559;
 	min-height: 100px;
 	
 	img {
@@ -33,80 +43,20 @@
 		margin-left: 100px;
 		margin-top: 0;
 		margin-bottom: 2px;
-		color: #E6B88A;
+		color: #875558;
 	}
 	p, div.price_line {
 		margin-left: 100px;
 		margin-top: 0.5em;
 		margin-bottom: 0.8em;
+		color: #875559;
 	}
 
 .price {
-	color: #EECDAD;
+	color: #875558;
 	font-weight: bold;
 	margin-right: 3em;
 }
 }
 
-p {
-	color: #EBC6A1;
-}
-
-.products{
-
-	
-	table {
-		border-collapse: collapse;
-	}
-
-	table tr td {
-		padding: 5px;
-		vertical_align: top;
-	}
-
-	.list_image{
-		width: 60px;
-		height: 70px;
-	}
-
-	.list_description{
-		width: 60%;
-
-	dl {
-		margin: 0;
-	}
-
-	dt {
-		color: #935A3E;
-		font-weight: bold;
-		font-size: larger;
-	}
-
-	dd {
-		margin:0;
-	}
-
- }
-
-.list_actions {
-	font-size: 14px;
-	text-align: right;
-	padding-left: 1em;
-	display: inline;
-}
-
-.list_line_even {
-	background: #D3BFB6;
-}
-
-.list_line_odd {
-	background: #756A65;
-}
-
-.list_qtd_vazio {
-	background: #D63333;
-}
-
-
-}
 }
