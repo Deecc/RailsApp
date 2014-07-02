@@ -24,8 +24,79 @@ body {
 		width:850px;
 	}
 
+table {
+		background-color: #8c867e;
+		margin-left: 55px;
+		width:850px;
+		
+	}
+
+
+	table tbody{
+		margin-left: 25px;
+		
+	}
+
+	table tr td {
+		width:auto;
+		margin-top:3px;
+		padding: 0px;
+		vertical_align: top;
+	}
+
+	.list_image{
+		margin-top:3px;
+		width: auto;
+		height: auto;
+	}
+
+	.list_description{
+		width: auto;
+
+	dl {
+		margin: 10px;
+	}
+
+	dt {
+		color: #8c867e;
+		font-weight: bold;
+		font-size: larger;
+	}
+
+	dd {
+		margin:10px;
+	}
+
+ }
+
+.list_actions {
+	text-align: right;
+	padding-left: 1em;
+	margin-right:10px;
+	
+}
+
+.list_line_even {
+	width:auto;
+	height: 225px;
+	background: #D3BFB6;
+}
+
+.list_line_odd {
+	width:auto;
+	height: 225px;
+	background: #756A65;
+}
+
+.list_qtd_vazio {
+	width:auto;
+	height: 225px;
+	background: #D63333;
+}
+
 
 .entry {
+	
 
 	overflow: auto;
 	margin-top: 1em;
@@ -63,5 +134,6 @@ body {
 	margin-right: 3em;
 }
 }
+
 
 }

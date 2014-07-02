@@ -1,5 +1,7 @@
-<h1>Lista de produtos</h1>
-
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1>Bem vindo à Book Store</h1>
 <table>
   <% @products.each do |product| %>
   <% if (product.qtd > 0) %>
@@ -14,10 +16,10 @@
       </dl>
     </td>
     <td class="list_actions">
-      <%= link_to 'Show', product %>
-      <%= link_to 'Edit', edit_product_path(product)%> 
-      <%= link_to 'Destroy', product, method: :delete,
-                  data: {confirm: 'Are you sure?'} %>
+      <button type="button" class="btn btn-default"><%= link_to 'Mostrar', product %></button> 
+     <button type="button" class="btn btn-default"><%= link_to 'Editar', edit_product_path(product)%> </button>
+      <button type="button" class="btn btn-default"><%= link_to 'Deletar', product, method: :delete,
+                  data: {confirm: 'Are you sure?'} %> </button> 
     </td>
   </tr>
   
@@ -33,11 +35,10 @@
       </dl>
     </td>
     <td class="list_actions">
-      <%= link_to 'Show', product %> 
-      <%= link_to 'Edit', edit_product_path(product)%> 
-      <%= link_to 'Destroy', product, method: :delete,
-                  data: {confirm: 'Are you sure?'} %>
-    </td>
+     <button type="button" class="btn btn-default"><%= link_to 'Mostrar', product %></button> 
+     <button type="button" class="btn btn-default"><%= link_to 'Editar', edit_product_path(product)%> </button>
+      <button type="button" class="btn btn-default"><%= link_to 'Deletar', product, method: :delete,
+                  data: {confirm: 'Are you sure?'} %> </button>
   </tr>
   <%end %>
   <% end %>
@@ -45,4 +46,5 @@
 
 <br />
 
-<%= link_to 'New Product', new_product_path %>
+
+<button type="button" class="btn btn-success"><%= link_to 'Cadastrar novo produto.', new_product_path %></button>

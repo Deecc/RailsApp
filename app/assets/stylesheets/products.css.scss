@@ -3,8 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
-	font-size:30px;
-	color: #875558;
+		margin-top: 5px;
+		margin-left: 55px;
+		padding-bottom: 0px;
+		font: 150% sans-serif;
+		color: #875559;
+		border-bottom: 3px dotted #875558;
+		width:850px;
 }
 
 p {
@@ -14,24 +19,23 @@ p {
 
 .products{
 	
-	width:850px;
-
-
 	
 	table {
 		background-color: #8c867e;
-		margin-left: 15px;
-		
+		margin-left: 55px;
+		width:850px;
 		
 	}
+
 
 	table tbody{
 		margin-left: 25px;
+		
 	}
 
 	table tr td {
-		
-
+		width:auto;
+		margin-top:3px;
 		padding: 0px;
 		vertical_align: top;
 	}
@@ -42,7 +46,7 @@ p {
 	}
 
 	.list_description{
-		width: 800px;
+		width: auto;
 
 	dl {
 		margin: 10px;
@@ -61,20 +65,19 @@ p {
  }
 
 .list_actions {
-	background-color: #d8d8d8;
-	font-size: 50px;;
 	text-align: right;
 	padding-left: 1em;
-	float:right;
+	margin-right:10px;
+	
 }
 
 .list_line_even {
-	width:800px;
+	width:auto;
 	background: #D3BFB6;
 }
 
 .list_line_odd {
-	width:800px;
+	width:auto;
 	background: #756A65;
 }
 
@@ -85,3 +88,4 @@ p {
 
 
 }
+
