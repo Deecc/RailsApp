@@ -16,10 +16,10 @@
       </dl>
     </td>
     <td class="list_actions">
-      <%= link_to 'Mostrar', product %> 
-      <%= link_to 'Editar', edit_product_path(product)%> 
-      <%= link_to 'Deletar', product, method: :delete,
-                  data: {confirm: 'Are you sure?'} %> 
+      <button type="button" class="btn btn-default"><%= link_to 'Mostrar', product %></button> 
+     <button type="button" class="btn btn-default"><%= link_to 'Editar', edit_product_path(product)%> </button>
+      <button type="button" class="btn btn-default"><%= link_to 'Deletar', product, method: :delete,
+                  data: {confirm: 'Are you sure?'} %> </button> 
     </td>
   </tr>
   
@@ -35,10 +35,10 @@
       </dl>
     </td>
     <td class="list_actions">
-      <%= link_to 'Mostrar', product %> 
-      <%= link_to 'Editar', edit_product_path(product)%> 
-      <%= link_to 'Deletar', product, method: :delete,
-                  data: {confirm: 'Are you sure?'} %> 
+     <button type="button" class="btn btn-default"><%= link_to 'Mostrar', product %></button> 
+     <button type="button" class="btn btn-default"><%= link_to 'Editar', edit_product_path(product)%> </button>
+      <button type="button" class="btn btn-default"><%= link_to 'Deletar', product, method: :delete,
+                  data: {confirm: 'Are you sure?'} %> </button>
   </tr>
   <%end %>
   <% end %>
@@ -46,4 +46,5 @@
 
 <br />
 
-<%= link_to 'Cadastrar novo produto.', new_product_path %>
+
+<button type="button" class="btn btn-success"><%= link_to 'Cadastrar novo produto.', new_product_path %></button>

@@ -15,12 +15,13 @@ body {
 	
 
 	h1 {
-
-		margin: 0;
+		margin-top: 5px;
+		margin-left: 55px;
 		padding-bottom: 0.5em;
 		font: 150% sans-serif;
 		color: #875559;
 		border-bottom: 3px dotted #875558;
+		width:850px;
 	}
 
 
@@ -32,13 +33,16 @@ body {
 	min-height: 100px;
 	
 	img {
-		width: 80px;
+		margin-left:25px;
+		width: auto;
 		margin-right: 5px;
 		margin-bottom: 5px;
-		position: absolute;
+		margin-top:3px;
+		margin-bottom:3px;
+		position: relative;
 	}
 	h3 {
-		font-size: 120%;
+		font-size: 30px;
 		font-family: sans-serif;
 		margin-left: 100px;
 		margin-top: 0;
@@ -46,6 +50,7 @@ body {
 		color: #875558;
 	}
 	p, div.price_line {
+		font-size: 20px;
 		margin-left: 100px;
 		margin-top: 0.5em;
 		margin-bottom: 0.8em;

@@ -3,34 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
+	font-size:30px;
 	color: #875558;
 }
 
 p {
+	font-size:20px;
 	color: #875558;
 }
 
 .products{
+	
+	width:850px;
+
 
 	
 	table {
 		background-color: #8c867e;
-		width:1024px;
-		border-collapse: collapse;
+		margin-left: 15px;
+		
+		
+	}
+
+	table tbody{
+		margin-left: 25px;
 	}
 
 	table tr td {
-		padding: 5px;
+		
+
+		padding: 0px;
 		vertical_align: top;
 	}
 
 	.list_image{
-		width: 70px;
-		height: 100px;
+		width: auto;
+		height: auto;
 	}
 
 	.list_description{
-		width: 100%;
+		width: 800px;
 
 	dl {
 		margin: 10px;
@@ -50,20 +62,24 @@ p {
 
 .list_actions {
 	background-color: #d8d8d8;
-	font-size: 20px;;
+	font-size: 50px;;
 	text-align: right;
 	padding-left: 1em;
+	float:right;
 }
 
 .list_line_even {
+	width:800px;
 	background: #D3BFB6;
 }
 
 .list_line_odd {
+	width:800px;
 	background: #756A65;
 }
 
 .list_qtd_vazio {
+	width:auto;
 	background: #D63333;
 }
 
