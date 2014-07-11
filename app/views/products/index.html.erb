@@ -3,11 +3,6 @@
 <% end %>
 <h1>Bem vindo à Book Store</h1>
 <table>
-  <tr >
-    <td>
-      <h3>Ordenar por Categoria</h3>
-      <%= f.select :categoria, [["Ebook", 'Ebook'], ["Livro", 'Livro'], ["Revista", 'Revista']] %>
-    </td>
   
   <% @products.each do |product| %>
   <% if (product.qtd > 0) %>
