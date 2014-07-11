@@ -1,5 +1,5 @@
 <h3 id="notice"><%= notice %></h3>
-<%= stylesheet_link_tag "show", media: "all","data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "show", "data-turbolinks-track" => true %>
 
 <h1>Descrição do Produto</h1>
 
@@ -30,6 +30,10 @@
   <p><%= @product.qtd %></p>
 </h3>
 
+<h3>
+  <strong>Categoria:</strong>
+  <p><%= @product.categoria %></p>
+</h3>
 
 <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %> |</button>
 <button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>

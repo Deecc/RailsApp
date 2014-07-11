@@ -31,6 +31,10 @@
     <%= f.label :qtd %><br>
     <%= f.text_field :qtd %>
   </div>
+  <div class="field">
+    <%= f.label :categoria %><br>
+    <%= f.select :categoria, [["Ebook", 'Ebook'], ["Livro", 'Livro'], ["Revista", 'Revista']] %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
