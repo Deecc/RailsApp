@@ -3,7 +3,10 @@
 <% end %>
 <h1>Bem vindo à Book Store</h1>
 <table>
-  
+  <tr>
+    <td><p>Produtos</p></td>
+    <td ><p style="margin-left:400px;float:right;">Categoria</p></td>
+  </tr> 
   <% @products.each do |product| %>
   <% if (product.qtd > 0) %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -14,6 +17,12 @@
       <dl>
         <dt><%= product.title%></dt>
         <dd><%= truncate(strip_tags(product.description), lenght: 200) %> </dd>
+      </dl>
+    </td>
+    <td class="list_description">
+      <dl>
+        <dt><%= product.categoria%></dt>
+        <dd><%= truncate(strip_tags(product.categoria), lenght: 200) %> </dd>
       </dl>
     </td>
     <td class="list_actions">
@@ -30,6 +39,12 @@
       <dl>
         <dt><%= product.title%></dt>
         <dd><%= truncate(strip_tags(product.description), lenght: 88) %> </dd>
+      </dl>
+    </td>
+    <td class="list_description">
+      <dl>
+        <dt><%= product.categoria%></dt>
+        <dd><%= truncate(strip_tags(product.categoria), lenght: 200) %> </dd>
       </dl>
     </td>
     <td class="list_actions">
