@@ -1,42 +1,44 @@
 
-<%= stylesheet_link_tag "show", media: "all","data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "application", media: "all","data-turbolinks-track" => true %>
+<div class="cadastro">
+
 <h3 id="notice"><%= notice %></h3>
 
 <h1>Descrição do Produto</h1>
 
-<div id="show">
+
 <h3>
-  <strong>Title:</strong>
+  <h1>Titulo:</h1>
   <p><%= @product.title %></p>
 </h3>
 
 <h3>
-  <strong>Description:</strong>
+  <h1>Descrição:</h1>
   <p><%= @product.description %></p>
 </h3>
 
 <h3>
-  <strong>Image url:</strong>
+  <h1>URL da imagem:</h1>
   <p><%= @product.image_url %></p>
 </h3>
 
 <h3>
-  <strong>price:</strong>
- <p> <%= @product.price %></p>
+  <h1>Preço:</h1>
+ <p> R<%= number_to_currency(@product.price) %></p>
   
 </h3>
 
 <h3>
-  <strong>Quantidade:</strong>
+  <h1>Quantidade:</h1>
   <p><%= @product.qtd %></p>
 </h3>
 
 <h3>
-  <strong>Categoria:</strong>
+  <h1>Categoria:</h1>
   <p><%= @product.categoria %></p>
 </h3>
-
-<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %> |</button>
-<button type="button" class="btn btn-default"><%= link_to 'Back', store_path %></button>
+</br>
+<%= link_to 'Editar', edit_product_path(@product), class: 'btn-simples' %> 
+<%= link_to 'Voltar', store_path, class: 'btn-simples' %>
 
 </div>

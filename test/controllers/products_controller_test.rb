@@ -7,7 +7,9 @@ class ProductsControllerTest < ActionController::TestCase
       title: 'lorem ipsum',
       description: 'Wibbles are fun',
       image_url: 'lorem.jpg',
-      price: 19.95
+      price: 19.95,
+      qtd:10,
+      categoria: 'Livro'
     }
   end
 

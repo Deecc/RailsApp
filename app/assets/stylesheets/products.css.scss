@@ -2,90 +2,85 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-		margin-top: 5px;
-		margin-left: 55px;
-		padding-bottom: 0px;
-		font: 150% sans-serif;
-		color: #875559;
-		border-bottom: 3px dotted #875558;
-		width:850px;
-}
-
-p {
-	font-size:20px;
-	color: #875558;
-}
-
 .products{
+
+	p {
+		font-size: 1.4em;
+		color: #6B5656;
+	}
 	
+	h1{
+		font-size: 1.6em;
+		color: #6B5656;
+	}
 	
 	table {
-		background-color: #8c867e;
-		margin-left: 55px;
-		width:850px;
+		width:100%;
 		
 	}
 
-
 	table tbody{
-		margin-left: 25px;
+		margin-left: 0;
 		
 	}
 
 	table tr td {
-		width:auto;
 		margin-top:3px;
 		padding: 0px;
-		vertical_align: top;
+		
 	}
 
 	.list_image{
-		width: auto;
+		width: 60%;
 		height: auto;
 	}
 
 	.list_description{
-		width: auto;
+		width: 60%;
+		font-size: 1.3em;
+		
+		dt {
+			color: #6B5656;
+			font-weight: bold;
+			font-size: 1.3em;
+		}
 
-	dl {
-		margin: 10px;
-	}
+		dd {
+			height: 70px;
+			
+		}
 
-	dt {
-		color: #8c867e;
-		font-weight: bold;
-		font-size: larger;
-	}
+ 	}
 
-	dd {
-		margin:10px;
-	}
-
- }
-
-.list_actions {
-	text-align: right;
-	padding-left: 1em;
-	margin-right:10px;
+	.list_actions {
+		text-align: center;
+		padding-left: 1em;
+		margin-right: 5px;
 	
+	}
+
+	.list_line_even {
+		width:100%;
+		background: #A69A9A;
+	}
+
+	.list_line_odd {
+		width:100%;
+		background:white;
+	}
+
+	.list_qtd_vazio {
+		width:100%;
+		background: #D63333;
+	}
+
+
 }
 
-.list_line_even {
-	width:auto;
-	background: #D3BFB6;
+.cadastro {
+	width: 60%;
+	padding: 50px;
+	margin-left: 200px;
+	background-color: #E1DDDD;
+	border-radius: 20px;
 }
-
-.list_line_odd {
-	width:auto;
-	background: #756A65;
-}
-
-.list_qtd_vazio {
-	width:auto;
-	background: #D63333;
-}
-
-
-}
-

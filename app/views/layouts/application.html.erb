@@ -7,21 +7,36 @@
 <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
-	<div id="banner">
-		<%= image_tag("Banner.png") %>
+	<div class="container clearfix">
+		<div class="header">
+			<%= image_tag ('Banner.jpg') , alt: 'banner', class: 'banner' %> 
+			<nav class="menu">
+			<ul>
+ 				<li><%= link_to 'Home', store_path, class: 'btn-menu' %> </li>
+ 				<li> <%= link_to 'Produtos', products_path, class: 'btn-menu' %></li>
+ 				<li ><%= link_to 'Login', products_path, class: 'btn-menu' %>  </li>
+ 				<li ><%= link_to 'Contato', products_path, class: 'btn-menu' %> </li>
+ 				<li ><%= link_to 'Localização', products_path, class: 'btn-menu' %> </li>
+
+			</ul>
+
+		</nav>
+		</div>
+
+		<div class="conteudo">
+			<%= yield %>
+		</div>
+
+		<div class="footer">
+			<p> ¹Criado por Décio e Thiago - TADS - 3M</p>
+		</div>
+	
 	</div>
-	<div id="menu">
-		<ul>
-			<li><a href="localhost:3000"><%= image_tag("Home.png") %></a></li>
-			<li><a href="/products"><%= image_tag("Produtos.png") %></a></li>
-			<li><a href="http://www..../news"><%= image_tag("Secoes.png") %></a></li>
-			<li><a href="http://www..../contact"><%= image_tag("Contato.png") %></a></li>
-				
-		</ul>
-	</div>
-	<div id="main">
-		<%= yield %>
-	</div>
-	</div>
+
+	
+
+	
+	
+	
 </body>
 </html>

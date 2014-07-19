@@ -1,11 +1,12 @@
-<%= stylesheet_link_tag "show", media: "all","data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "application", media: "all","data-turbolinks-track" => true %>
 
+<div class="cadastro">
 <h1>Edição de Produtos</h1>
 
 
-<div id="show">
+
 <%= render 'form' %>
 
-<button type="button" class="btn btn-default"><%= link_to 'Show', @product %> </button>
-<button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
+<%= link_to 'Detalhar', @product, class: 'btn-simples' %> 
+<%= link_to 'Voltar', products_path , class: 'btn-simples'%>
 </div>

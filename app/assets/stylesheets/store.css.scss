@@ -2,138 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-		width: 1024px;
-		height: 540px;
-		margin: auto;
-}
-
-
 
 .store {
 
+	width: 100%;
 	
 
-	h1 {
-		margin-top: 5px;
-		margin-left: 55px;
-		padding-bottom: 0.5em;
-		font: 150% sans-serif;
-		color: #875559;
-		border-bottom: 3px dotted #875558;
-		width:850px;
-	}
+}	
 
-table {
-		background-color: #8c867e;
-		margin-left: 55px;
-		width:850px;
-		
-	}
-
-
-	table tbody{
-		margin-left: 25px;
-		
-	}
-
-	table tr td {
-		width:auto;
-		margin-top:3px;
-		padding: 0px;
-		vertical_align: top;
-	}
-
-	.list_image{
-		margin-top:3px;
-		width: auto;
-		height: auto;
-	}
-
-	.list_description{
-		width: auto;
-
-	dl {
-		margin: 10px;
-	}
-
-	dt {
-		color: #8c867e;
-		font-weight: bold;
-		font-size: larger;
-	}
-
-	dd {
-		margin:10px;
-	}
-
- }
-
-.list_actions {
-	text-align: right;
-	padding-left: 1em;
-	margin-right:10px;
-	
-}
-
-.list_line_even {
-	width:auto;
-	height: 225px;
-	background: #D3BFB6;
-}
-
-.list_line_odd {
-	width:auto;
-	height: 225px;
-	background: #756A65;
-}
-
-.list_qtd_vazio {
-	width:auto;
-	height: 225px;
-	background: #D63333;
-}
 
 
 .entry {
 	
 
 	overflow: auto;
-	margin-top: 1em;
-	border-bottom: 1px dotted #875559;
-	min-height: 100px;
-	
-	img {
-		margin-left:25px;
-		width: auto;
-		margin-right: 5px;
-		margin-bottom: 5px;
-		margin-top:3px;
-		margin-bottom:3px;
-		position: relative;
-	}
+		
 	h3 {
-		font-size: 30px;
+		font-size: 2em;
 		font-family: sans-serif;
-		margin-left: 100px;
 		margin-top: 0;
 		margin-bottom: 2px;
-		color: #875558;
+		color: #6B5656;
 	}
-	p, div.price_line {
+
+	.price_line {
 		font-size: 20px;
-		margin-left: 100px;
 		margin-top: 0.5em;
 		margin-bottom: 0.8em;
-		color: #875559;
+		color: #6B5656;
 	}
 
-.price {
-	color: #875558;
-	font-weight: bold;
-	margin-right: 3em;
-}
+	.price {
+		color: #6B5656;
+		font-size: 15em;
+		font-weight: bold;
+		
+	}
 }
 
 
-}
+
