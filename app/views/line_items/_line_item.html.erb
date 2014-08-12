@@ -1,0 +1,15 @@
+<% if line_item == @current_item %>
+<tr id="current_item"> 
+<% else %>
+
+<tr >
+<%end %>
+			<td><p><%= line_item.quantity %>&times;</p></td>
+			<td><p><%= line_item.product.title %></p></td>
+			<td><p><%= line_item.product.price %> </p></td>
+			<td class="item_price"><p>R<%= number_to_currency(line_item.total_price) %></p></td>
+			<td> <p><%= button_to '+', line_items_path(product_id: line_item.product_id), class: 'btn-simples'%></p>
+			<td> <p><%#= button_to '-', line_item, method: :delete ,  class: 'btn-simples'%></p>	
+
+</tr>
+		

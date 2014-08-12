@@ -89,6 +89,9 @@ video {
   text-decoration: none;
 }
 
+.cart {
+  width: 100%;  
+}
 
 .conteudo {
 	margin-top: 14em;

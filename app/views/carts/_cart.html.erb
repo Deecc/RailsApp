@@ -1,0 +1,31 @@
+	<h2>Carrinho</h2>
+	
+	<table >
+		<th>
+			<tr>
+ 				<td><p>Quantidade</p></td>
+ 				<td><p>Item</p></td>
+ 				<td><p>Preço</p></td>
+ 				<td><p>Subtotal</p></td>
+ 			</tr>
+		</th>
+		
+		<%= render (cart.line_items) %>
+		
+		<tr class="total_line precoTotal">
+			<hr>
+			<td colspan="2"><p>Total</p></td>
+			<td class="total_cell"><p>R<%= number_to_currency(cart.total_price) %></p></td>
+		</tr>
+		<tr>
+			<td><%= button_to 'Esvaziar carrinho', cart, method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn-simples'	%></td>
+		</tr>
+ 	</table>
+ 	</div>
+</br>
+
+
+
+ 
+
+</br>

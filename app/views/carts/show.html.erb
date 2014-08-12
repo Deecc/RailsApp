@@ -18,24 +18,12 @@
 			<tr>
  				<td><p>Quantidade</p></td>
  				<td><p>Item</p></td>
- 				<td><p>Preço</p></td>
+ 				<td><p>Preço Unitário</p></td>
+ 				<td><p>Subtotal</p></td>
  			</tr>
 		</th>
-		<% @cart.line_items.each do |item| %>
-
 		
-
-		<tr >
-
-			<td><p><%= button_to '+', line_items_path(product_id: item.product), class: 'btn-simples'%></p>
-				<p><%= item.quantity %>&times;</p>
-				<p><%= button_to '-', item, method: :delete ,  class: 'btn-simples'%></p>
-			</td>
-			<td><p><%= item.product.title %></p></td>
-			<td class="item_price"><p>R<%= number_to_currency(item.total_price) %></p></td>
-
-		</tr>
-		<% end %>
+		<%= render @cart %>
 		
 		<tr class="total_line precoTotal">
 			<hr>
@@ -46,7 +34,7 @@
  	</div>
 </br>
 
-<%= button_to 'Esvaziar carrinho', @cart, method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn-simples'	%> 
+<%# = button_to 'Esvaziar carrinho', @cart, method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn-simples'	%>
 
 </br>
 
