@@ -7,42 +7,25 @@
 <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
-	<div class="container clearfix">
+	<div class="clearfix">
 		<div class="header">
-			<%= image_tag ('Banner.jpg') , alt: 'banner', class: 'banner' %> 
-			<nav class="menu">
-			<ul>
- 				<li><%= link_to 'Home', store_path, class: 'btn-menu' %> </li>
- 				<li> <%= link_to 'Produtos', products_path, class: 'btn-menu' %></li>
- 				<li ><%= link_to 'Login', products_path, class: 'btn-menu' %>  </li>
- 				<li ><%= link_to 'Contato', products_path, class: 'btn-menu' %> </li>
- 				<li ><%= link_to 'Localização', products_path, class: 'btn-menu' %> </li>
-
+			<%= image_tag ('Banner.png') , alt: 'banner', class: 'banner' %> 
+			<%if @cart %>
+			<div class="cart">
+				<ul class="nav nav-pills pull-right">
+					<li><a href="/carts/<%= @cart.id %>"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho <span id="cart-count">(<%= @cart.total_quantity %> - R<%= number_to_currency(@cart.total_price) %>)</span></a></li>
 			</ul>
-
-		</nav>
+			<% end %>
 		</div>
 
-		
-		<div class="conteudo">
-		<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
-			<%= render @cart %>
-		<% end %>
-		</div>
-
+		<div class="container" > 
 			<%= yield %>
 		</div>
 
 		<div class="footer">
-			<p> ¹Criado por Décio e Thiago - TADS - 3M</p>
+			<p> Criado por Décio e Thiago - TADS - 3M</p>
 		</div>
 	
 	</div>
-
-	
-
-	
-	
-	
 </body>
 </html>

@@ -1,12 +1,10 @@
 <%= stylesheet_link_tag "application", media: "all","data-turbolinks-track" => true %>
 
-<div class="cadastro">
-<h1>Edição de Produtos</h1>
 
-
+<h2>Edição de Produtos</h2>
 
 <%= render 'form' %>
 
-<%= link_to 'Detalhar', @product, class: 'btn-simples' %> 
-<%= link_to 'Voltar', products_path , class: 'btn-simples'%>
-</div>
+<%= link_to 'Voltar', products_path , class: 'btn btn-primary'%>
+
+

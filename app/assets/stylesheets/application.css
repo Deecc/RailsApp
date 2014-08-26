@@ -19,10 +19,13 @@
 }
 
 body {
+  margin: auto;
   font-size: 62.5%;
   line-height: 1.5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #6B5656;
+  width: 1200px;
+  
 }
 
 a {
@@ -47,61 +50,52 @@ video {
   max-width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+div {
+     
+ }
+
 
 .header {
   width: 100%;
-  height: 200px;
-  margin-top: 0.6em;
-  /*margin-bottom: 3.6em;*/
+  height: 201px;
+  margin-top: 0.2em;
+  border-radius: 15px;
+ 
 }
 
 .banner {
-  /*margin-bottom: 0.6em;*/
-  position: relative;
   width: 100%;
-  border-radius: 4px 4px 200px 200px;
-}
-
-.menu {
-  width: 100%;
-  font-size: 3em;
-  margin-bottom: 0.6em;
-  color: #7A2929;
-
-}
-
-.menu ul {
-  width: 100%;
-  text-align: center;
-}
-
-.menu li {
-  margin-left: 0.1em;
-  display: inline-block;
-}
-
-.menu li a {
-  color: #7A2929;
-  text-decoration: none;
+  height: 201px;
+  opacity: 0.9;
 }
 
 .cart {
-  width: 100%;  
+  margin-top: 3px;
+  float: left;
+  margin-left: 7%;
+  width: 86%;
+  border-radius: 10px;
+  background-color: #EFEFEF;
+  box-shadow: 1px 1px 3px #888888;
+     
 }
 
-.conteudo {
-	margin-top: 14em;
+.container {
+  margin-top: 57px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #888888;
+  background-color: #EFEFEF;
+  opacity: 0.9;
+  
+  
 }
 
 .coluna {
     width: 20%; /* 240px / 1200px */
     float: left;
     margin-bottom: 2em;
-    /*margin-right: 0.025%; /* 24 / 1128px */
 }
 
 .coluna:last-child {
@@ -109,66 +103,21 @@ video {
 }
 
 .footer {
-  width: 100%;
+  width: 86%;
+  margin-left: 7%;
+  background-color: #EFEFEF;
   margin-top: 2.4em;
   margin-bottom: 2.4em;
-  float: left;
-  clear: both;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #888888;
+ 
 }
 
 .footer p {
-	font-size: 1em;
+  margin-top: 4px;
+  text-align: center;
+	font-size: 1.2em;
 }
-
-
-.btn-simples {
-	height: 30px;
-	padding: 5px 10px;
-	font-size: 1em;
-	color: white;
-	background-color: #8D1919;
-	border-radius: 7px;
-	text-align: center;
-	margin-bottom: 1em;
-}
-
-.btn-simples:hover {
-	background-color: #B36666;
-}
-
-@keyframe animaMenu {
-
-	from {
-		background-color: #E1DDDD;
-	}
-	
-	to {
-		background-color: #766B6B;
-	}
-
-}
-
-.btn-menu {
-	color: #7A2929;
-	background-color: #E1DDDD;
-	padding: 10px 20px;
-	font-size: 1em;
-	border-radius: 3px 3px 50px 50px;
-}
-
-
-.btn-menu:hover {
-	animation-name: animaMenu;
-	animation-timing-function: ease;
-	animation-duration: 5s;
-   	animation-delay: 1s;
-   	animation-iteration-count: infinite;
-   	animation-direction: alternate;
-   	animation-play-state: running
-	color: #F1E2E2;
-	background-color: #766B6B;
-}
-
 
 .clearfix:before,
 .clearfix:after{

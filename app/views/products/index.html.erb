@@ -57,10 +57,9 @@
       </dl>
     </td>
     <td class="list_actions">
-      <%= link_to 'Detalhar', product , class: 'btn-simples'%> 
-      <%= link_to 'Editar', edit_product_path(product), class: 'btn-simples'%> 
+      <%= link_to 'Editar', edit_product_path(product), class: 'btn btn-primary'%> 
       <%= link_to 'Deletar', product, method: :delete,
-                  data: {confirm: 'Tem certeza que deseja excluir o item?'}, class: 'btn-simples' %>  
+                  data: {confirm: 'Tem certeza que deseja excluir o item?'}, class: 'btn btn-primary' %>  
     </td>
   </tr>
   

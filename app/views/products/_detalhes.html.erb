@@ -1,0 +1,41 @@
+
+<%= stylesheet_link_tag "application", media: "all","data-turbolinks-track" => true %>
+<div >
+
+<h4 id="notice"><%= notice %></h4>
+
+<h4>
+  <h1>Titulo:</h1>
+  <p><%= @products.first.title %></p>
+</h4>
+
+<h4>
+  <h1>Descrição:</h1>
+  <p><%= @products.first.description %></p>
+</h4>
+
+<h4>
+  <h1>URL da imagem:</h1>
+  <p><%= @products.first.image_url %></p>
+</h4>
+
+<h4>
+  <h1>Preço:</h1>
+ <p> R<%= number_to_currency(@products.first.price) %></p>
+  
+</h4>
+
+<h4>
+  <h1>Quantidade em estoque:</h1>
+  <p><%= @products.first.qtd %></p>
+</h4>
+
+<h4>
+  <h1>Categoria:</h1>
+  <p><%= @products.first.categoria %></p>
+</h4>
+</br>
+
+
+
+</div>

@@ -1,5 +1,5 @@
 if ($('.cart tr').length == 1) { $('.cart').show('blind', 1000);}
 
-$('.cart').html("<%= escape_javascript render(@cart) %>");
+$("span#cart-count").html("(<%= @cart.total_quantity.to_s %> - <%= number_to_currency(@cart.total_price).to_s %>)");
 
-$('#current_item').css({'background-color':'#AA3377'}).animate({'background-color':'#661155'}, 1000);
+$('.cart').css({'background-color':'#3E9FB5'}).animate({'background-color':'##EFEFEF'}, 650);

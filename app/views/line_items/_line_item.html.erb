@@ -1,15 +1,13 @@
 <% if line_item == @current_item %>
-<tr id="current_item"> 
-<% else %>
+<tr id="current_item">
+<% else %> 
 
-<tr >
-<%end %>
-			<td><p><%= line_item.quantity %>&times;</p></td>
-			<td><p><%= line_item.product.title %></p></td>
-			<td><p><%= line_item.product.price %> </p></td>
-			<td class="item_price"><p>R<%= number_to_currency(line_item.total_price) %></p></td>
-			<td> <p><%= button_to '+', line_items_path(product_id: line_item.product_id), class: 'btn-simples'%></p>
-			<td> <p><%#= button_to '-', line_item, method: :delete ,  class: 'btn-simples'%></p>	
-
+<tr>
+	<% end %>
+	<td><%= line_item.quantity %>&times;</td>
+	<td><%= line_item.product.title %></td>
+	<td><%= number_to_currency(line_item.total_price) %></td>
+	<td class="text-center table-add-more"><%= button_to '+', line_item_path(line_item), method: 'patch', class: "btn btn-xs btn-success" %></td>
+	<td class="text-center table-add-more"><%= button_to '-', reduce_line_item_path(line_item), method: 'patch', class: "btn btn-xs btn-warning" %></td>
+	<td class="text-center table-add-more"><%= button_to 'x', line_item_path(line_item), method: 'delete', class: "btn btn-xs btn-danger" %></td>
 </tr>
-		

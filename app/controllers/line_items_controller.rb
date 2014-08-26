@@ -2,7 +2,7 @@ class LineItemsController < ApplicationController
 
   include CurrentCart
   before_action :set_cart, only: [:create]
-  before_action :set_line_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_line_item, only: [:show, :edit, :update, :destroy, :reduce]
 
 
 
@@ -80,6 +80,21 @@ class LineItemsController < ApplicationController
     respond_to do |format|
     format.html { redirect_to @line_item.cart, notice: 'Item removido com sucesso.' }
     format.json { head :no_content }
+    end
+  end
+
+  def reduce
+    @line_item.quantity -= 1
+
+    respond_to do |format|
+      if @line_item.save
+        @line_item.destroy if @line_item.quantity == 0
+        format.html { redirect_to cart_path, notice: 'Product successfully removed from cart.' }
+        format.json { render :show, status: :ok, location: @line_item }
+      else
+        format.html { render :edit }
+        format.json { render json: @line_item.errors, status: :unprocessable_entity }
+      end
     end
   end
 

@@ -13,5 +13,19 @@
 //= require jquery
 //= require jquery-ui/effect-blind
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+
+$(document).ready(function() {
+
+  var clickOnPopupLink = function(){
+    $('body').on('click', '.static-popup-link', function(){
+      $('modal').modal('show');
+    });
+  }
+
+  clickOnPopupLink();
+
+});
+

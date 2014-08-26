@@ -5,12 +5,22 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+
+    
     
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    @product = Product.find(params[:id])
+
+    respond_to do |format|
+      format.html { redirect_to store_path}
+      format.json { render action: 'show', status: :created, location: @product }
+      format.js
+    end
+
   end
 
   # GET /products/new
