@@ -12,7 +12,7 @@ html
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  
 }
 article,
 aside,
@@ -3592,7 +3592,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #ece;
+  background-color: #3E9FB5;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -3701,7 +3701,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #725f35;
+  background-color: #3E9FB5;
 }
 .nav-stacked > li {
   float: none;
@@ -5428,7 +5428,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1020;
+  z-index: 1040;
   background-color: #000;
 }
 .modal-backdrop.fade {

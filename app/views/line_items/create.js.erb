@@ -2,4 +2,4 @@ if ($('.cart tr').length == 1) { $('.cart').show('blind', 1000);}
 
 $("span#cart-count").html("(<%= @cart.total_quantity.to_s %> - <%= number_to_currency(@cart.total_price).to_s %>)");
 
-$('.cart').css({'background-color':'#3E9FB5'}).animate({'background-color':'##EFEFEF'}, 650);
+$('.cart').css({'background-color':'#3E9FB5'}).animate({'background-color':'#FFFFFF'}, 650);

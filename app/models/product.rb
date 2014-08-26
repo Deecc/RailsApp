@@ -12,6 +12,10 @@ class Product < ActiveRecord::Base
 				message: 'Must be a URL for GIF, JPG or PNG image.'
 			}
 
+    def findProducts
+    	products = Product.find(param[:id])
+    	@products
+    end
 
 
 	private 

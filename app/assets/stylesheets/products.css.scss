@@ -4,16 +4,24 @@
 
 .products{
 
+
 	p {
-		font-size: 1.4em;
+		font-size: 1em;
 		color: #6B5656;
 	}
 	
 	h1{
-		font-size: 1.6em;
 		color: #6B5656;
 	}
 	
+	h3 {
+		color: #6B5656;
+	}
+
+	h4 {
+		color: #6B5656;
+	}
+
 	table {
 		width:100%;
 		
@@ -33,18 +41,18 @@
 	.list_image{
 		width: 60%;
 		height: auto;
-		box-shadow: 10px 10px 5px #888888;
+		box-shadow: 4px 4px 5px #888888;
 		border-radius: 10px;
 	}
 
 	.list_description{
 		width: 60%;
-		font-size: 1.3em;
+		font-size: 1em;
 		
 		dt {
 			color: #6B5656;
 			font-weight: bold;
-			font-size: 1.3em;
+			font-size: 1em;
 		}
 
 		dd {
@@ -79,10 +87,4 @@
 
 }
 
-.cadastro {
-	width: 58%;
-	padding: 50px;
-	margin-left: 200px;
-	background-color: #E1DDDD;
-	border-radius: 20px;
-}
+

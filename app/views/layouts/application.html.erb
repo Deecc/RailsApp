@@ -9,7 +9,7 @@
 <body class="<%= controller.controller_name %>">
 	<div class="clearfix">
 		<div class="header">
-			<%= image_tag ('Banner.png') , alt: 'banner', class: 'banner' %> 
+			<%=link_to image_tag('bs.png') , store_path %> 
 			<%if @cart %>
 			<div class="cart">
 				<ul class="nav nav-pills pull-right">
@@ -18,7 +18,7 @@
 			<% end %>
 		</div>
 
-		<div class="container" > 
+		<div class="conteudo" > 
 			<%= yield %>
 		</div>
 
