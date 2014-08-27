@@ -13,7 +13,8 @@
 			<%if @cart %>
 			<div class="cart">
 				<ul class="nav nav-pills pull-right">
-					<li><a href="/carts/<%= @cart.id %>"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho <span id="cart-count">(<%= @cart.total_quantity %> - R<%= number_to_currency(@cart.total_price) %>)</span></a></li>
+					<li><a href="/carts/<%= @cart.id %>">Carrinho <span id="cart-count">(<%= @cart.total_quantity %> - R<%= number_to_currency(@cart.total_price) %>)</span></a></li>
+					<li><%= link_to image_tag('ck.png'), new_order_path %></li>
 			</ul>
 			<% end %>
 		</div>

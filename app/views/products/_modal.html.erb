@@ -1,4 +1,4 @@
-<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+<div class="modal fade" id="mymodal<%= product.id %>" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -12,28 +12,28 @@
 
 
   <h4 style="background-color: #3E9FB5;color:#FFFFFF;">Título:</h4>
-  <p><%= @products.first.title %></p>
+  <p><%= product.title %></p>
 
 
 <h4>
   <h4 style="background-color: #3E9FB5;color:#FFFFFF;">Descrição:</h4>
-  <p><%= @products.first.description %></p>
+  <p><%= product.description %></p>
 </h4>
 
 <h4>
   <h4 style="background-color: #3E9FB5;color:#FFFFFF;">Preço:</h4>
- <p> R<%= number_to_currency(@products.first.price) %></p>
+ <p> R<%= number_to_currency(product.price) %></p>
   
 </h4>
 
 <h4>
   <h4 style="background-color: #3E9FB5;color:#FFFFFF;">Quantidade em estoque:</h4>
-  <p><%= @products.first.qtd %></p>
+  <p><%= product.qtd %></p>
 </h4>
 
 <h4>
   <h4 style="background-color: #3E9FB5;color:#FFFFFF;">Categoria:</h4>
-  <p><%= @products.first.categoria %></p>
+  <p><%= product.categoria %></p>
 </h4>
 </br>
 

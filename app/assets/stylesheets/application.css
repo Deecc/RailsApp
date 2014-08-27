@@ -43,7 +43,23 @@ p {
 
 img,
 video {
-  max-width: 100%;
+  max-width: 100%;  
+}
+
+.imagem img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.imagem img:hover {
+  box-shadow: 3px 3px 4px 4px #3E9FB5;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.checkout img {
+  max-width: 10%;
 }
 
 .header {
@@ -65,17 +81,16 @@ video {
   position: relative;
   border-radius: 20px;
   box-shadow: 1px 1px 3px #888888;
-  opacity: 0.9;
+  opacity: 1;
   
   
 }
 
 .coluna {
-    width: 20%; /* 240px / 1200px */
+    width: 21%; /* 240px / 1200px */
     float: left;
-    margin-bottom: 2em;
-    margin-left: 4em;
-    border-radius: 10px;
+    
+    margin-left: 3em;
 }
 
 .coluna:last-child {
@@ -113,3 +128,33 @@ video {
   *zoom: 1;
 }
 
+.depot_form {
+fieldset {
+background: #efe;
+legend {
+color: #dfd;
+background: #141;
+font-family: sans-serif;
+padding: 0.2em 1em;
+}
+}
+form {
+label {
+width: 5em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+select, textarea, input {
+margin-left: 0.5em;
+}
+.submit {
+margin-left: 4em;
+}
+br {
+display: none
+}
+}
+}

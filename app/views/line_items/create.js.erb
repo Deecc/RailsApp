@@ -1,3 +1,5 @@
+$('#notice').hide();
+
 if ($('.cart tr').length == 1) { $('.cart').show('blind', 1000);}
 
 $("span#cart-count").html("(<%= @cart.total_quantity.to_s %> - <%= number_to_currency(@cart.total_price).to_s %>)");
